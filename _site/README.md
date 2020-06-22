@@ -1,3 +1,5 @@
-# Building Project Websites with Jekyll and GitHub Pages
+# Intro to Jekyll
+
 ### UBC Library Research Commons
-Link to workshop: [ubc-library-rc.github.io/project-project-sites](https://ubc-library-rc.github.io/intro-project-sites/)
+
+Link to workshop: [ubc-library-rc.github.io/intro-jekyll](https://ubc-library-rc.github.io/intro-jekyll/)

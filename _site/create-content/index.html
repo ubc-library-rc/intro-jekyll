@@ -1,9 +1,11 @@
 <h1 id="add-content-to-your-site">Add Content To Your Site</h1>
 
 <h2 id="posts-and-pages">Posts and Pages</h2>
+
 <p>Before we add content to our site, lets go over the two basic types of content documents: posts and pages.</p>
 
 <h3 id="posts">Posts</h3>
+
 <p>Posts are the dynamic content that makes up your site. Often these are articles, tutorials, or some newsworthy event, but can take the form of whatever you want. Posts are published with a date – which affects their timing, relevancy, and longevity.</p>
 
 <p>Posts should always be written in a markup language such as Markdown or HTML, and always follow the naming convention: <strong>YYYY-MM-DD-title-of-post</strong>.markdown</p>
@@ -11,6 +13,7 @@
 <p>Navigate to your Jekyll site directory on your computer, and open the <strong>_posts</strong> folder. Inside you should see your “welcome-to-jekyll” Markdown file. <strong>Open that file in your code editor</strong>.</p>
 
 <h4 id="front-matter">Front Matter</h4>
+
 <p>Your post and page is divided into two main sections. The “front matter” and the content. The front matter of your post provides Jekyll with basic information about the document - such as the layout, title, author, date, and other things. Some of these front matter elements, like information about the layout, are defined elsewhere in your Jekyll directory. Your front matter should look something like this:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
@@ -20,7 +23,9 @@ date:   2020-02-05 08:49:10 -0800
 categories: jekyll update
 ---
 </code></pre></div></div>
+
 <p>For this workshop, we’re going to leave the default front in our post the way they are. Instead, let’s edit the content below with some Lorem Markdownum (via <a href="https://jaspervdj.be/lorem-markdownum/" target="_blank">jaspervdj.be/lorem-markdownum/</a>). Copy the text below, and replace the content below your front matter.</p>
+
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Certis quem vincla at triste Surrentino placuisse
 
 Fulsit *Phoce* hiscere incustoditae terra Achillem offensaque fratri enim
@@ -58,12 +63,15 @@ Imumque nam [parabat visa](http://bracchia.net/), corpus vix perenni vires tibi
 formamque velate lucem in quem. Achivos cana artisque veste inquit aristas
 divesque laeso.
 </code></pre></div></div>
+
 <p>Now save your document, and refresh your browser to see the changes live.</p>
 
 <h3 id="pages">Pages</h3>
+
 <p>Pages are used for the static content on your site such as an About, Contact, or CV page. The easiest method for adding a page is to create a <code>.md</code> document in the main (root) folder of your site.</p>
 
 <p>Let’s create a new file called <code>contact.md</code> and add the following text.</p>
+
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: page
 title: Contact Us
@@ -99,6 +107,7 @@ modo, eam flammis Laelape ad parabat pater penetrabile inbutam Pallas constitit.
 &gt; Ora Boreas Iovis: [temptavit](http://telum-pinum.net/) heros et facit fuisse,
 &gt; ex ipsa parte freta. Gemitus vitae.
 </code></pre></div></div>
+
 <p>Now save your file and refresh your site’s homepage.</p>
 
 <p>Notice that unlike Posts, Pages are not published with a date in their filename.</p>

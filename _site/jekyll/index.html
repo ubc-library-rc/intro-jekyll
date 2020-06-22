@@ -1,9 +1,13 @@
 <h1 id="what-is-jekyll">What is Jekyll?</h1>
+
 <p>Jekyll is a popular site generator that transforms plain text documents (Markdown, HMTL, CSS, etc.) into static sites that can easily be used for blogs and informational websites. Jekyll works very well with traditional Git and GitHub workflows, and so if you are already familiar with those, Jekyll site building will seem straightforward. If you aren’t, don’t worry – this workshop is meant for beginners. Jekyll is written in Ruby and so you’ll notice some Ruby-specific terminology (like “Gems”).</p>
 
 <h3 id="anatomy-of-a-jekyll-site">Anatomy of a Jekyll site</h3>
+
 <p>Let’s take a look at your new Jekyll installation and see what’s there. Most of the information here is from the <a href="https://jekyllrb.com/docs/" target="_blank">Official Jekyll documentation</a>.</p>
+
 <h4 id="file-structure">File Structure</h4>
+
 <p>The default Jekyll package will install a directory of files that make up your site. Canonical information about this <a href="https://jekyllrb.com/docs/structure/" target="_blank">file structure</a> can be found here. Your new installation should have installed a directory with a file structure that looks similar to this:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
 ├── _config.yml
@@ -44,8 +48,9 @@
 <h2 id="start-your-jekyll-server">Start your Jekyll server</h2>
 <p>Now that we’ve looked at the content that makes up the default Jekyll site, let’s take a look at the same content as it’s rendered by your internet browser. Jekyll uses a web server to transform its content into a website. So in order to see your live site, you’ll need to start a local web server to see the development site correctly in your browser.</p>
 
-<p>In your Unix shell start your server using the command:  <br />
-<code>$ bundle exec jekyll serve</code></p>
+<p>In your Unix shell start your server using the command:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle exec jekyll serve
+</code></pre></div></div>
 
 <p>Now head to <a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000/</a> to see your site in your browser. You should see the default Jekyll site homepage and styling:</p>
 
@@ -54,6 +59,7 @@
 <p>You may really like the way this default site looks and can use it as-is. Or, you might want to start building your own site from scratch. Each direction comes with its own costs and benefits. For this workshop, we’re going to customize the default site and add some content. Then we’ll show you how you can install themes that fit your project’s look, feel, and desired functionality.</p>
 
 <h3 id="customize-your-_configyml">Customize your _config.yml</h3>
+
 <p>Notice that your site’s title and email are still set to the generic default. “Your awesome title”, “your-email@example.com”, and other settings can be re-configured in the <code>_config.yml</code> file. A .yml (pronounced “yammel”) file is a text file that contains structured markup that Ruby consumes and understands. All of the text in the <code>_config.yml</code> is site configuration information.</p>
 
 <p>In your code editor, open your <code>_config.yml</code> file. You should see the text that makes up this file – something like:</p>

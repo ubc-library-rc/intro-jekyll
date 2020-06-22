@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to APIs - What is an API?</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/ubc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <section>
+          <h2>What is an API?</h2>
+          <span class="fragment">
+            <b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface
+          </span>
+        </section>
+
+
+				<section>
+				  A structured way for software applications to communicate with each other
+				</section>
+
+        <section data-background="#e6f7ff">
+          <p><b>Why use APIs?</b><p>
+          <section>
+          <p>Enhance your projects with services and data provided by other applications</p>
+          <div class="fragment fade-in-then-out" style="position:relative">
+            <iframe width="600" height="300" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?zoom=11&center=49.2827,-123.1207&key=AIzaSyDYl5y6Sq0XKodDmTDWuKV1VYMLcMmT_QM"></iframe>
+
+              <p style="font-size:0.7em">Source: <a href="https://developers.google.com/maps/documentation/embed/start" target="_blank">Google Maps Embed API</a></p>
+          </div>
+          <div class="fragment fade-in-then-out" style="position:absolute; top:35%;">
+            <iframe style="background-color: white;" width=70% height="300"  src="https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0"></iframe><ul>
+            <p style="font-size:0.7em">Source: <a href="hhttps://api.nasa.gov/#insight" target="_blank">Insight: Mars Weather Service API (NASA)</a></p>
+          </div>
+					<div class="fragment fade-in" style="position:absolute; top: 35%; left:5%">
+						Control and monitor access to your resources
+					</div>
+          </section>
+				</section>
+
+				<section>
+					<p><b>The restaurant metaphor</b></p>
+					<p style="font-size:0.9em">The waiter (the API) functions as an intermediary between customers like you (the user) and the kitchen (web server).</p>
+					<p class="fragment" style="font-size:0.9em; padding-top: 50px">You don't need to know how the kitchen or the restaurant operates, you just need to know how to order.</p>
+					<p style="font-size:0.6em; padding-top: 120px">Andrew Park, <a href="https://tray.io/blog/how-do-apis-work">What are APIs and how do they work?</a>
+				</section>
+
+				<section>
+					<p><b>RESTful API</b>: A type of API where the communication happens via HTTP, often using a browser</p>
+					<div class="fragment" style="line-height:0.7em">
+					<code style="font-size:0.7em;">https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0</code>
+				</div>
+					<iframe class="fragment" style="background-color: white; border:1px solid lightgrey;margin-top:30px" width=70% height="300"  src="https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0"></iframe>
+
+				</section>
+
+				<section data-background="#e6f7ff">
+					<h4>Authentication</h4>
+					<ul>
+						<li>Public API key
+						<li>Registered API key
+					</ul>
+
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
