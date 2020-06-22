@@ -1,0 +1,80 @@
+<h1 id="what-is-jekyll">What is Jekyll?</h1>
+<p>Jekyll is a popular site generator that transforms plain text documents (Markdown, HMTL, CSS, etc.) into static sites that can easily be used for blogs and informational websites. Jekyll works very well with traditional Git and GitHub workflows, and so if you are already familiar with those, Jekyll site building will seem straightforward. If you aren’t, don’t worry – this workshop is meant for beginners. Jekyll is written in Ruby and so you’ll notice some Ruby-specific terminology (like “Gems”).</p>
+
+<h3 id="anatomy-of-a-jekyll-site">Anatomy of a Jekyll site</h3>
+<p>Let’s take a look at your new Jekyll installation and see what’s there. Most of the information here is from the <a href="https://jekyllrb.com/docs/" target="_blank">Official Jekyll documentation</a>.</p>
+<h4 id="file-structure">File Structure</h4>
+<p>The default Jekyll package will install a directory of files that make up your site. Canonical information about this <a href="https://jekyllrb.com/docs/structure/" target="_blank">file structure</a> can be found here. Your new installation should have installed a directory with a file structure that looks similar to this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+├── _config.yml
+├── _drafts
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2020-02-10-welcome-to-jekyll.md
+├── _sass
+|   ├── _base.scss
+|   └── _layout.scss
+├── _site
+├── 404.html
+├── about.md
+├── Gemfile
+├── Gemfile.lock
+└── index.html
+</code></pre></div></div>
+<p>Many of the files listed here are used by Jekyll to “transform” your content into a site – which is generated on-the-fly, and stored in the folder <strong>_site</strong>. For this workshop we’re going to concentrate on the essentials, including the <strong>config.yml</strong> file, posts, pages, and styling. But let’s go through some of these default files and directories so we’re familiar with what’s there.</p>
+<ul>
+  <li><strong>_config.yml</strong>: This is one of the most important files listed. It includes configuration information about your site such as the site’s title, admin email, description, Twitter handles, and other things that are universal about to your site. <a href="https://jekyllrb.com/docs/configuration/" target="_blank">More information about Jekyll configuration settings can be found here</a>.</li>
+  <li><strong>_drafts</strong>: The _drafts folder is where your not-yet-published posts reside. <a href="https://jekyllrb.com/docs/posts/#drafts" target="_blank">More info about working with drafts can be found here</a>.</li>
+  <li><strong>_includes</strong>: The _includes folder is where reusable content for your page layouts and posts is stored. This can include things like your page’s header and footer. More information about includes. <a href="https://jekyllrb.com/docs/includes/" target="_blank">More information about includes</a>.</li>
+  <li><strong>_layouts</strong>: The layouts folder contains templates for the default layout of different types of site content. For example, information about how blog posts vs. informational page are displayed. <a href="https://jekyllrb.com/docs/layouts/" target="_blank">More information about layouts</a>.</li>
+  <li><strong>_posts</strong>: The posts folder contains all of your posts or “dynamic content”, usually in Markdown or HTML format. The file names for posts must begin the the date of the post (post drafts can exist without dates). <a href="https://jekyllrb.com/docs/posts/" target="_blank">More information about posts can be found here</a>.</li>
+  <li><strong>_sass</strong>: The sass folder is where all of your site’s styling is found. More <a href="https://jekyllrb.com/docs/assets/#sassscss" target="_blank">information about sass</a> and <a href="https://mademistakes.com/articles/jekyll-style-guide/" target="_blank">Jekyll site styling</a>.</li>
+  <li><strong>_site</strong>: This is where all of the content transformed by the Jekyll engine is deposited. You don’t have to worry about or do anything to this folder.</li>
+  <li><strong>404.html</strong>: This is a default “404” error page. People only see this if they’ve been directed to a page on your site that doesn’t exist.</li>
+  <li><strong>about.md</strong>: This is a static page part of the Jekyll installation. It will appear in the main navigation of your site if left in the main Jekyll directory. You can delete or modify the file however you like.</li>
+  <li><strong>Gemfile and Gemfile.lock</strong>: These files were placed in the default directory if you installed Jekyll using Bundler. These define the gem dependencies for your site.</li>
+  <li><strong>index.html</strong>: This is the default landing page for your site written in HTML, but it can also be written in Markdown.</li>
+</ul>
+
+<h2 id="start-your-jekyll-server">Start your Jekyll server</h2>
+<p>Now that we’ve looked at the content that makes up the default Jekyll site, let’s take a look at the same content as it’s rendered by your internet browser. Jekyll uses a web server to transform its content into a website. So in order to see your live site, you’ll need to start a local web server to see the development site correctly in your browser.</p>
+
+<p>In your Unix shell start your server using the command:  <br />
+<code>$ bundle exec jekyll serve</code></p>
+
+<p>Now head to <a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000/</a> to see your site in your browser. You should see the default Jekyll site homepage and styling:</p>
+
+<p><img src="blanksite1.png" alt="site" border="1" /></p>
+
+<p>You may really like the way this default site looks and can use it as-is. Or, you might want to start building your own site from scratch. Each direction comes with its own costs and benefits. For this workshop, we’re going to customize the default site and add some content. Then we’ll show you how you can install themes that fit your project’s look, feel, and desired functionality.</p>
+
+<h3 id="customize-your-_configyml">Customize your _config.yml</h3>
+<p>Notice that your site’s title and email are still set to the generic default. “Your awesome title”, “your-email@example.com”, and other settings can be re-configured in the <code>_config.yml</code> file. A .yml (pronounced “yammel”) file is a text file that contains structured markup that Ruby consumes and understands. All of the text in the <code>_config.yml</code> is site configuration information.</p>
+
+<p>In your code editor, open your <code>_config.yml</code> file. You should see the text that makes up this file – something like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: Your awesome title
+email: your-email@example.com
+description: &gt;- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname &amp; protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+</code></pre></div></div>
+
+<p>Here you can see some of the configuration settings of your Jekyll site, including your title and email. Change the site’s title to “<strong>[your name]’s Project Site</strong>”, and the email address to your email’s.</p>
+
+<p>Save your document and refresh your browser. You should see the changes reflected on your local site.</p>
