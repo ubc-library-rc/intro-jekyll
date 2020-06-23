@@ -17,11 +17,9 @@ This is your session. If you have a question or feel we are going too fast, plea
 
 | Time | Content
 | --- | ---
-| [Part 1](part-01.md)
 | 0:05 | [Concepts and terms](concepts.md)
 | 0:10 | [Setting up your first site](sample-project-site.md)
 | 0:15 | [Customizing your site](customizing.md)
-| [Part 2](part-02.md)
 | 0:25 | [What is Jekyll?](jekyll.md)
 | 0:35 | [Setting up your system](setup-part2.md)
 | 1:10 | [Creating Content](create-content.md)

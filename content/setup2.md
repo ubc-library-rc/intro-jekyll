@@ -8,7 +8,7 @@ nav_order: 2
 
 # Setting up your system
 
-For this workshop, we'll build a site locally first, then publish it to the web when we're ready and have some content. In order to work locally, we have to make sure that our computer has all the necessary software installed. Jekyll needs a full Ruby development environment so we'll need to make sure we have that configured correctly first.
+In a typical jekyll installation, you would normally build the site locally first, then publish it to the web when you are ready and have some content. In order to work locally, you first have to make sure that our computer has all the necessary software installed. Jekyll needs a full Ruby development environment so you'll need to make sure you have that configured correctly first.
 
 You'll also want to be sure to have a good code editor on your machine to view and edit your code. We recommend using either [Atom](https://atom.io/){:target="_blank"}, [Sublime Text](https://www.sublimetext.com/){:target="_blank"}, or [Notepad++](https://notepad-plus-plus.org/){:target="_blank"}.
 {: .note}
