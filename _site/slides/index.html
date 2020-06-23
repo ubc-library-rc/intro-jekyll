@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to Jekyll - What are static sites?</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/ubc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+		<div class="slides">
+		<section>
+			<h1>Introduction to Jekyll</h3>
+		</section>
+
+		<section>
+			<h3>How many are already familiar with GitHub?</h3>
+		</section>
+
+		<section>
+			<h3>How many have heard of (or used) static sites before?</h3>
+		</section>
+
+	        <section>
+	        	<h2>Static sites:</h2>
+				<span class="fragment"><li>Jekyll (Ruby)</li></span>
+				<span class="fragment"><li>Hugo (Go)</li></span>
+				<span class="fragment"><li>Gatsby (Javascript)</li></span>
+	        	<h2 class="fragment">Dynamic sites (CMS):</h2>
+				<span class="fragment"><li>WordPress</li></span>
+				<span class="fragment"><li>Drupal</li></span>
+				<span class="fragment"><li>Wix</li></span>
+				<span class="fragment"><li>Squarespace</li></span>
+		</section>
+
+	        <section>
+	        	<h2>Benefits of static sites:</h2>
+				<span class="fragment"><li>Speed</li>
+				<span class="fragment"><li>Simplicity</li>
+				<span class="fragment"><li>Security</li>
+				<span class="fragment"><li>Flexibility
+		</section>
+
+	        <section>
+	        	<h2>What do static sites look like?</h2>
+	        	<img class="fragment" src="../figures/theme-hyde.png">
+		</section>
+
+	        <section>
+	        	<h2>What do static sites look like?</h2>
+	        	<img src="../figures/theme-left.png">
+		</section>
+
+	        <section>
+	        	<h2>What do static sites look like?</h2>
+	        	<img src="../figures/theme-minimal_mistakes.png">
+		</section>
+
+	        <section>
+	        	<h2>What do static sites look like?</h2>
+	        	<img src="../figures/theme-skinny_bones.png">
+		</section>
+
+
+		<section>
+			<h3>Jekyll-Now</h3>
+
+			<p>For this section of the workshop we will be using a special version of jekyll called <a href="https://github.com/barryclark/jekyll-now">jekyll-now</a> which has been set up to be immediately usable in a few easy steps:</p>
+			
+			<a href="https://github.com/barryclark/jekyll-now" target="_blank">Jump to the jekyll-now project page.</a>
+
+		</section>
+
+	        <section>
+                        <p>Click on the <strong>Fork</strong> button at the top right corner of the jekyll-now project page (see screenshot below which has the button highlighted in red):</p>
+                        <img src="../figures/fork-button-highlight.png" alt="Fork button" /></p>
+	        </section>
+
+	        <section>
+                        <p>After a few moments, you should see the project page has been copied over to your account (your username will appear in the top left corner of the screen, before the project name, as in the screenshot below):</p>
+                        <img src="../figures/repo-name.png" alt="Repo name" /></p>
+	        </section>
+
+
+	        <section>
+                        <p>Click on the button labelled <strong>Settings</strong> in the row of links near the top of the page (see screenshot below with the button highlighted in red):</p>
+                        <img src="../figures/settings-highlight.png" alt="Settings button" /></p>
+	        </section>
+
+
+	        <section>
+                        <p>Once the Settings page loads, scroll all the way down to the bottom of the page and look for a section called <strong>GitHub Pages</strong>. You should see a message that GitHub Pages is disabled. Click on the drop down menu (highlighted below) and select the <strong>master</strong> branch (highlighted in the second image below):</p>
+                        <img src="../figures/settings-gh-pages-none-highlight.png" alt="GitHub Pages Source" /></p>
+                        <img src="../figures/settings-gh-pages-select-branch-highlight.png" alt="GitHub Pages Select Branch" /></p>
+	        </section>
+
+
+	        <section>
+                        <p>After a moment, the page should reload – you must <em>scroll down again</em> to the bottom of the page to confirm that the GitHub Pages site has been published successfully. If everything has gone well, there should be a message indicating the URL of your new website (see highlighted example below):</p>
+                        <img src="../figures/settings-gh-pages-published-highlight.png" alt="GitHub Pages Select Branch" /></p>
+	        </section>
+
+		<section>
+			<h3>Structure of a GitHub Pages URL</h3>
+
+			<span class="fragment"><li><strong>yourname.github.io/jekyll-now</strong></li></span>
+		</section>
+
+		<section>
+			<h3>Structure of a GitHub Pages URL</h3>
+
+			<li><strong><span style="color:green">yourname</span>.github.io/jekyll-now</strong></li>
+		</section>
+
+		<section>
+			<h3>Structure of a GitHub Pages URL</h3>
+
+			<li><strong><span style="color:green">yourname</span>.github.io/<span style="color:red">jekyll-now</span></strong></li>
+		</section>
+
+
+			</div>
+			</div>
+
+
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
