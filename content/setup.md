@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Setting up your system
-permalink: /setup2/
+permalink: /setup/
 parent: Part 2 - Diving deeper
 nav_order: 2
 ---
