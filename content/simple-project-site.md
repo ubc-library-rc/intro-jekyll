@@ -3,7 +3,7 @@ layout: default
 title: Setting up your first project site
 permalink: /simple-project-site/
 parent: Part 1 - The basics
-nav_order: 2
+nav_order: 6
 ---
 
 # Setting up your first project site.

@@ -3,7 +3,7 @@ layout: default
 title: GitHub Pages
 permalink: /gh-pages/
 parent: Part 2 - Diving deeper
-nav_order: 5
+nav_order: 11
 ---
 
 ## Get your site online with GitHub Pages

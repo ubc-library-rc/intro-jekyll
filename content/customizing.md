@@ -3,7 +3,7 @@ layout: default
 title: Customizing your site
 permalink: /customizing/
 parent: Part 1 - The basics
-nav_order: 3
+nav_order: 8
 ---
 
 ## Setting a different theme

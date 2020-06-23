@@ -3,7 +3,7 @@ layout: page
 title: Setting up your system
 permalink: /setup/
 parent: Part 2 - Diving deeper
-nav_order: 2
+nav_order: 10
 ---
 
 # Setting up your system
