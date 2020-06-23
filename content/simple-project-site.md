@@ -16,7 +16,7 @@ Note: Before following the steps below, please make sure that you are logged in 
 
 1. Click on the **Fork** button at the top right corner of the jekyll-now project page (see screenshot below which has the button highlighted in red):
 
-![Fork button](../figures/fork_button-highlight.png)
+![Fork button](../figures/fork-button-highlight.png)
 
 2. After a few moments, you should see the project page has been copied over to your account (your username will appear in the top left corner of the screen, before the project name, as in the screenshot below):
 
