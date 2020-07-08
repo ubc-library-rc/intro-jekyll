@@ -17,3 +17,7 @@ This workshop is meant to introduce you to the concept of static websites and to
 
 Unless you set your Github repository to private, the information that you publish to your GitHub.com account will be publicly visible. As of 2019, Github allows unlimited private repositories for free accounts.
 {: .warn}
+
+## Download
+
+You can download a PDF containing the complete slides for this workshop [here](https://ubc-library-rc.github.io/intro-jekyll/content/intro-jekyll-workshop-slides.pdf).
