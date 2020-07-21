@@ -6,12 +6,13 @@
 
 		<title>Introduction to Jekyll - What are static sites?</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/ubc.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+<!-- 		<link rel="stylesheet" href="dist/theme/black.css" id="theme"> -->
+		<link rel="stylesheet" href="dist/ubc.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -122,19 +123,19 @@
                         <img src="../figures/settings-gh-pages-published-highlight.png" alt="GitHub Pages Select Branch" /></p>
 	        </section>
 
-		<section>
+		<section data-transition="none">
 			<h2>Structure of a GitHub Pages URL</h2>
 
 			<span class="fragment"><li><strong>yourname.github.io/jekyll-now</strong></li></span>
 		</section>
 
-		<section>
+		<section data-transition="none">
 			<h2>Structure of a GitHub Pages URL</h2>
 
 			<li><strong><span style="color:green">yourname</span>.github.io/jekyll-now</strong></li>
 		</section>
 
-		<section>
+		<section data-transition="none">
 			<h2>Structure of a GitHub Pages URL</h2>
 
 			<li><strong><span style="color:green">yourname</span>.github.io/<span style="color:red">jekyll-now</span></strong></li>
@@ -169,24 +170,20 @@
 
 
 
-		<script src="js/reveal.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
 			Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        transition: 'none', // none/fade/slide/convex/concave/zoom
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
