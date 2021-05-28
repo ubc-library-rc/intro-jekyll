@@ -4,7 +4,7 @@ title: Introduction
 nav_order: 1
 ---
 
-# Intro to Jekyll
+# Introduction to Jekyll
 
 _[View workshop slides here](https://ubc-library-rc.github.io/intro-jekyll/slides/)_
 
@@ -13,7 +13,7 @@ This workshop is meant to introduce you to the concept of static websites and to
 ## Prerequisites
 
 - A [GitHub.com account](https://github.com/){:target="_blank"}. We'll use GitHub Pages to host our static site.
-- Some familiarity with Git and GitHub. We'll use Git and GitHub workflows to publish our site. If you'd like to learn more about Git and GitHub before going any further, please see this workshop: [Intro to Git and GitHub](https://ubc-library-rc.github.io/intro-git/){:target="_blank"}.
+- Some familiarity with Git and GitHub. We'll use Git and GitHub workflows to publish our site. If you'd like to learn more about Git and GitHub before going any further, please see this workshop: [Introduction to Git and GitHub](https://ubc-library-rc.github.io/intro-git/){:target="_blank"}.
 
 Unless you set your Github repository to private, the information that you publish to your GitHub.com account will be publicly visible. As of 2019, Github allows unlimited private repositories for free accounts.
 {: .warn}

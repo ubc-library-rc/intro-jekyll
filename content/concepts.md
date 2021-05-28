@@ -38,8 +38,8 @@ Most of the interaction that you'll see on your site is powered by a script whic
 
 ## Learning
 
-- [Intro to Git and GitHub workshop](https://jeremybuhler.github.io/rc-git/){:target="_blank"}
-- [Intro to the Unix Shell workshop](https://ubc-library-rc.github.io/intro-shell/){:target="_blank"}
+- [Introduction to Git and GitHub workshop](https://jeremybuhler.github.io/rc-git/){:target="_blank"}
+- [Introduction to the Unix Shell workshop](https://ubc-library-rc.github.io/intro-shell/){:target="_blank"}
 - [Internetting is Hard (for HTML and CSS)](https://internetingishard.com/){:target="_blank"}
 
 ### Markdown

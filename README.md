@@ -1,4 +1,4 @@
-# Intro to Jekyll
+# Introduction to Jekyll
 
 ### UBC Library Research Commons
 
