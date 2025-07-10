@@ -1,4 +1,4 @@
-# Introduction to Jekyll
+# Introduction to Jekyll and GitHub Pages
 
 ### UBC Library Research Commons
 
