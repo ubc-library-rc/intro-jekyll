@@ -4,7 +4,7 @@ title: Introduction
 nav_order: 1
 ---
 
-# Introduction to Jekyll
+# Introduction to Jekyll and GitHub Pages
 
 _[View workshop slides here](https://ubc-library-rc.github.io/intro-jekyll/slides/)_
 
